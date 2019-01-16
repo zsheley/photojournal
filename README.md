@@ -1,0 +1,2 @@
+# photos
+photos page
