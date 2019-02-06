@@ -1,87 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
+  <head>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    
-    <!-- CSS/JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="index.css">
-
-    
-<h2>PHOTOS</h2>
-<div id="myBtnContainer">
-  <button class="btn active" onclick="window.location.href='https://zsheley.github.io'"> Home</button>
-  <button class="btn" onclick="window.location.href='https://zsheley.github.io/photos'"> Photos</button>
-  <button class="btn" onclick="window.location.href='https://zsheley.github.io/projects'"> Projects</button>
-  <button class="btn" onclick="window.location.href='https://zsheley.github.io/more'"> More</button>
-</div>
-
-<head>
-  
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="index.css"> 
   <meta charset="utf-8">
   <title>Photos</title>
   <meta name="description" content="The personal webpage of Zachery Sheley (That's me.).">
   <meta name="author" content="Zachery M. Sheley">
   
-  
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
   
-  
+ 
 <style>
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-}
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
-}
-.column img:hover {
-  opacity: 1;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
-}
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-</style>
+
+
+</style> 
 </head>
-<body>
+<body> 
+  <h2>PHOTOS</h2>
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="window.location.href='https://zsheley.github.io'"> Home</button>
+    <button class="btn" onclick="window.location.href='https://zsheley.github.io/photos'"> Photos</button>
+    <button class="btn" onclick="window.location.href='https://zsheley.github.io/projects'"> Projects</button>
+    <button class="btn" onclick="window.location.href='https://zsheley.github.io/more'"> More</button>
+  </div>
+  
 
 
-<!-- The four columns -->
 <div class="row">
   <div class="column">
     <img src="img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
@@ -103,6 +48,50 @@
   <div id="imgtext"></div>
 </div>
 
+<style>
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  .column img:hover {
+    opacity: 1;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* The expanding image container */
+  .container {
+    position: relative;
+  }
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  </style>
+
 <script>
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
@@ -113,7 +102,5 @@ function myFunction(imgs) {
 }
 </script>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
