@@ -9,4 +9,10 @@ function myFunction(imgs) {
   imgText.innerHTML = imgs.alt;
   // Show the container element (hidden with CSS)
   expandImg.parentElement.style.display = "block";
+  //test favicon
+  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'http://www.stackoverflow.com/favicon.ico';
+    document.getElementsByTagName('head')[0].appendChild(link);
 }
